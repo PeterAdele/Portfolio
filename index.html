@@ -34,16 +34,16 @@
               <a class="nav-link active" aria-current="page" href="#">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">SERVICES</a>
+              <a class="nav-link" href="#My_service">SERVICES</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link" href="#">PORTFOLIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-disabled="true">RESUME</a>
+              <a class="nav-link" aria-disabled="true" href="#cv-section">RESUME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">CONTACT</a>
+              <a class="nav-link" aria-current="page" href="#contact">CONTACT</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" id="downloadcv" aria-current="page" href="#cv-section">DOWNLOAD CV</a>
@@ -99,7 +99,7 @@
       </div> 
     </div>
     <!---->
-    <section>
+    <section id="My_service">
       <header>
         <div class="service-header mt-5 pt-5 mx-auto text-right">
           <h3 class="myservice" data-aos="fade-left">MY SERVICES</h3>
@@ -508,7 +508,27 @@
           <!-- Right side: Form -->
           <div class="col-lg-8 d-flex justify-content-end">
             <div class="w-100" style="max-width: 600px;" data-aos="fade-down">
-              <form id="contact-form" autocomplete="off" method="POST">
+              <section id="contact">
+  <form action="https://formsubmit.co/peteradelekan@yahoo.com" method="POST" class="contact-form">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://peteradele.github.io/Thank-You/">
+    <div class="mb-3">
+      <input type="text" name="name" placeholder="Your Name" required />
+    </div>
+
+    <div class="contact-row mb-4">
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="tel" name="phone" placeholder="Your Phone Number" />
+    </div>
+
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+    <button type="submit">Send Message <i class="fa-solid fa-paper-plane ml-3"></i></button>
+  </form>
+</section>
+
+
+               <!-- <form id="contact-form" autocomplete="off" method="POST">
                 
                 <div class="mb-5">
                   <input type="text" name="full_name" placeholder="Full name:" class="form-control w-100 border-white fs-xs full_name">
@@ -534,7 +554,8 @@
                   </button>
                 </div>
     
-              </form>
+              </form> -->
+              
             </div>
           </div>
         </div>
